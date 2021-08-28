@@ -27,5 +27,6 @@
     "type": "git",
     "url": "git+https://github.com/adriantek0/next.db.git"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "typings": "./index.d.ts"
 }
