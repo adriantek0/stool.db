@@ -1,7 +1,7 @@
 const Database = require('better-sqlite3');
 let db;
 
-if (!db) db = new Database('./nextdb.sqlite');
+if (!db) db = new Database('./stool.sqlite');
 
 const methods =
 {
