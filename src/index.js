@@ -4,7 +4,7 @@ let db;
 if (!db) db = new Database('./database.sqlite');
 
 const methods = {
-	get: require('./methods/fetch.js'),
+	get: require('./methods/get.js'),
 	set: require('./methods/set.js'),
 	add: require('./methods/add.js'),
 	subtract: require('./methods/subtract.js'),
@@ -18,21 +18,13 @@ const methods = {
 module.exports = {
 	version: require('../package.json').version,
 
-	fetch: function(key, ops) {
-		if (!key) {
-			throw new TypeError(
-				'No key specified.',
-			);
-		}
-		return arbitrate('fetch', { id: key, ops: ops || {} });
-	},
 	get: function(key, ops) {
 		if (!key) {
 			throw new TypeError(
 				'No key specified.',
 			);
 		}
-		return arbitrate('fetch', { id: key, ops: ops || {} });
+		return arbitrate('get', { id: key, ops: ops || {} });
 	},
 
 	set: function(key, value, ops) {
@@ -165,7 +157,7 @@ module.exports = {
 				);
 			}
 			return arbitrate(
-				'fetch',
+				'get',
 				{ id: key, ops: ops || {} },
 				this.tableName,
 			);
