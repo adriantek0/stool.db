@@ -1,4 +1,4 @@
-declare module 'next.db' {
+declare module 'stool.db' {
     export interface Options {
         target?: string | null;
         table?: string;

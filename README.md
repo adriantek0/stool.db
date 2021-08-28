@@ -1,6 +1,6 @@
 
-# 📦 Next.db
-Next.db is a safe, simple, reliable, powerful and fast database based on better-sqlite3. It can be used by any user due to its simplicity and usability.
+# 📦 stool.db
+stool.db is a safe, simple, reliable, powerful and fast database based on better-sqlite3. It can be used by any user due to its simplicity and usability.
 
 ## 📋 Features
 
@@ -14,7 +14,7 @@ Next.db is a safe, simple, reliable, powerful and fast database based on better-
 ## 📚 Usage
 
 ```javascript
-const nextdb = require('next.db');
+const nextdb = require('stool.db');
  
 // Setting an object in the database:
 nextdb.set('userInfo', { difficulty: 'Easy' });
@@ -58,11 +58,11 @@ If you're having troubles installing, please follow [this troubleshooting guide]
 
 - Windows & Linux
 ```bash
-  npm install next.db
+  npm install stool.db
 ```
 
 - MacOS
     - Install: XCode
     - Run: `npm i -g node-gyp in terminal`
     - Run: `node-gyp --python /path/to/python2.7` (skip this step if you didn't install python 3.x)
-    - Run: `npm i next.db`
+    - Run: `npm i stool.db`
