@@ -18,19 +18,20 @@ const methods =
 
 module.exports =
 {
-	get: function(key, ops, tableName)
+	get: function(key, ops, tableName = undefined)
 	{
 		if (!key)
 		{
 			throw new TypeError('No key specified.');
 		}
+
 		return arbitrate('get', {
 			id: key,
 			ops: ops || {}
 		}, tableName);
 	},
 
-	set: function(key, value, ops, tableName)
+	set: function(key, value, ops, tableName = undefined)
 	{
 		if (!key)
 		{
@@ -50,7 +51,7 @@ module.exports =
 		}, tableName);
 	},
 
-	add: function(key, value, ops, tableName)
+	add: function(key, value, ops, tableName = undefined)
 	{
 		if (!key) 
 		{
@@ -69,7 +70,7 @@ module.exports =
 		}, tableName);
 	},
 
-	subtract: function(key, value, ops, tableName)
+	subtract: function(key, value, ops, tableName = undefined)
 	{
 		if (!key)
 		{
@@ -88,7 +89,7 @@ module.exports =
 		}, tableName);
 	},
 
-	push: function(key, value, ops, tableName)
+	push: function(key, value, ops, tableName = undefined)
 	{
 		if (!key)
 		{
@@ -108,7 +109,7 @@ module.exports =
 		}, tableName);
 	},
 
-	delete: function(key, ops, tableName)
+	delete: function(key, ops, tableName = undefined)
 	{
 		if (!key)
 		{
@@ -121,7 +122,7 @@ module.exports =
 		}, tableName);
 	},
 
-	has: function(key, ops, tableName)
+	has: function(key, ops, tableName = undefined)
 	{
 		if (!key)
 		{
@@ -134,7 +135,7 @@ module.exports =
 		}, tableName);
 	},
 
-	includes: function(key, ops, tableName)
+	includes: function(key, ops, tableName = undefined)
 	{
 		if (!key)
 		{
@@ -147,21 +148,21 @@ module.exports =
 		}, tableName);
 	},
 
-	all: function(ops, tableName)
+	all: function(ops, tableName = undefined)
 	{
 		return arbitrate('all', {
 			ops: ops || {}
 		}, tableName);
 	},
 
-	fetchAll: function(ops, tableName)
+	fetchAll: function(ops, tableName = undefined)
 	{
 		return arbitrate('all', {
 			ops: ops || {}
 		}, tableName);
 	},
 
-	type: function(key, ops, tableName)
+	type: function(key, ops, tableName = undefined)
 	{
 		if (!key)
 		{
