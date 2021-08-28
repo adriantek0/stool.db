@@ -1,22 +1,14 @@
 /**
- * quick.db definitions
+ * next.db definitions
  */
 
-declare module 'quick.db' {
+declare module 'next.db' {
     export interface Options {
         target?: string | null;
         table?: string;
     }
 
     export type ValueData = string | object | number | null | boolean | bigint | symbol | any[];
-
-    /**
-     * Package version. Community requested feature.
-     * ```
-     * console.log(require('quick.db').version);
-     * ```
-     */
-    const version: string;
 
     /**
      * This function fetches data from a key in the database.
@@ -195,7 +187,6 @@ declare module 'quick.db' {
     }
 
     export {
-        fetch,
         get,
         set,
         add,
@@ -208,7 +199,6 @@ declare module 'quick.db' {
         del as delete,
         dataType as type,
         Table as table,
-        version
     }
 
 }
