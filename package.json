@@ -27,6 +27,6 @@
     "type": "git",
     "url": "git+https://github.com/adriantek0/stool.db.git"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "typings": "./index.d.ts"
 }

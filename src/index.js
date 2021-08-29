@@ -190,52 +190,52 @@ module.exports =
 
 		this.get = function(key, ops)
 		{
-			exports.get(key, ops, this.tableName);
+			module.exports.get(key, ops, this.tableName);
 		}
 
 		this.set = function(key, value, ops)
 		{
-			exports.set(key, value, ops, this.tableName);
+			module.exports.set(key, value, ops, this.tableName);
 		}
 
 		this.add = function(key, value, ops)
 		{
-			exports.add(key, value, ops, this.tableName);
+			module.exports.add(key, value, ops, this.tableName);
 		}
 
 		this.subtract = function(key, value, ops)
 		{
-			exports.subtract(key, value, ops, this.tableName);
+			module.exports.subtract(key, value, ops, this.tableName);
 		}
 
 		this.push = function(key, value, ops)
 		{
-			exports.push(key, value, ops, this.tableName);
+			module.exports.push(key, value, ops, this.tableName);
 		}
 
 		this.delete = function(key, ops)
 		{
-			exports.delete(key, ops, this.tableName);
+			module.exports.delete(key, ops, this.tableName);
 		}
 
 		this.has = function(key, ops)
 		{
-			exports.has(key, ops, this.tableName);
+			module.exports.has(key, ops, this.tableName);
 		};
 
 		this.includes = function(key, ops)
 		{
-			exports.includes(key, ops, this.tableName);
+			module.exports.includes(key, ops, this.tableName);
 		};
 
 		this.fetchAll = function(ops)
 		{
-			exports.fetchAll(ops, this.tableName);
+			module.exports.fetchAll(ops, this.tableName);
 		};
 
 		this.all = function(ops)
 		{
-			exports.all(ops, this.tableName);
+			module.exports.all(ops, this.tableName);
 		};
 	},
 };
